@@ -22,7 +22,7 @@ const initializeCounter = async () => {
 };
 
 describe("simple-counter", () => {
-  it("Is initialized!", async () => {
+  it("Initializes the counter to 0", async () => {
     const counter = await initializeCounter();
 
     const counterData = await program.account.counter.fetch(counter);
